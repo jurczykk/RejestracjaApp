@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,6 @@ namespace RejestracjaApp
     public partial class LogowanieForm : Form
     {
 
-        // Przechowywanie nazwy użytkownika i hasła bezpośrednio w kodzie
-        private string poprawnyLogin = "admin";
-        private string poprawneHaslo = "admin";
-
         public LogowanieForm()
         {
             InitializeComponent();
@@ -26,11 +23,17 @@ namespace RejestracjaApp
         {
 
             // Pobranie danych wprowadzonych przez użytkownika
-            string nazwaUzytkownika = txtLogin.Text;
+            string login = txtLogin.Text;
             string haslo = txtHaslo.Text;
 
+            // Tworzenie obiektu użytkownika
+            Uzytkownik uzytkownik = new Uzytkownik(login, haslo);
+
+            // Tworzymy obiekt klasy BazaDanych
+            BazaDanych baza = new BazaDanych();
+
             // Sprawdzanie poprawności danych logowania
-            if (nazwaUzytkownika == poprawnyLogin && haslo == poprawneHaslo)
+            if (baza.Zaloguj(uzytkownik))
             {
                 MessageBox.Show("Zalogowano pomyślnie!");
                 this.Hide();
@@ -43,7 +46,6 @@ namespace RejestracjaApp
             {
                 MessageBox.Show("Błędna nazwa użytkownika lub hasło.");
             }
-
         }
     }
 }
