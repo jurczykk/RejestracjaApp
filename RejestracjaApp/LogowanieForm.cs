@@ -47,5 +47,7 @@ namespace RejestracjaApp
                 MessageBox.Show("Błędna nazwa użytkownika lub hasło.");
             }
         }
+
+
     }
 }

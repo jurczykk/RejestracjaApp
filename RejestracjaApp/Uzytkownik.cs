@@ -9,15 +9,16 @@ namespace RejestracjaApp
     // Klasa reprezentująca użytkownika
     public class Uzytkownik
     {
-        // Właściwości klasy
         public string Login { get; set; }
         public string Haslo { get; set; }
 
-        // Konstruktor klasy Uzytkownik, który inicjalizuje login i hasło
+        // Konstruktor, który inicjalizuje użytkownika
         public Uzytkownik(string login, string haslo)
         {
             Login = login;
             Haslo = haslo;
         }
     }
+
+
 }
