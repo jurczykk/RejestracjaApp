@@ -87,6 +87,7 @@
             this.txtHaslo.Name = "txtHaslo";
             this.txtHaslo.Size = new System.Drawing.Size(136, 26);
             this.txtHaslo.TabIndex = 5;
+            this.txtHaslo.UseSystemPasswordChar = true;
             // 
             // LogowanieForm
             // 
