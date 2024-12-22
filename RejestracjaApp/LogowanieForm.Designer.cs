@@ -28,45 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnLogowanie = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtHaslo = new System.Windows.Forms.TextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroTile1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 190);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 237);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Hasło:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(293, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Witaj! Zaloguj się w systemie przychodni!";
             // 
             // btnLogowanie
             // 
             this.btnLogowanie.BackColor = System.Drawing.Color.LightBlue;
-            this.btnLogowanie.Location = new System.Drawing.Point(131, 324);
+            this.btnLogowanie.Location = new System.Drawing.Point(267, 325);
             this.btnLogowanie.Name = "btnLogowanie";
             this.btnLogowanie.Size = new System.Drawing.Size(158, 34);
             this.btnLogowanie.TabIndex = 3;
@@ -76,44 +51,88 @@
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(189, 187);
+            this.txtLogin.Location = new System.Drawing.Point(314, 170);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(136, 26);
             this.txtLogin.TabIndex = 4;
             // 
             // txtHaslo
             // 
-            this.txtHaslo.Location = new System.Drawing.Point(189, 234);
+            this.txtHaslo.Location = new System.Drawing.Point(314, 217);
             this.txtHaslo.Name = "txtHaslo";
             this.txtHaslo.Size = new System.Drawing.Size(136, 26);
             this.txtHaslo.TabIndex = 5;
             this.txtHaslo.UseSystemPasswordChar = true;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(90, 30);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(248, 19);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel1.TabIndex = 6;
+            this.metroLabel1.Text = "Witaj! Zaloguj sie w systemie przychodni!";
+            this.metroLabel1.UseStyleColors = true;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.Controls.Add(this.metroLabel3);
+            this.metroTile1.Controls.Add(this.metroLabel2);
+            this.metroTile1.Controls.Add(this.metroLabel1);
+            this.metroTile1.Location = new System.Drawing.Point(59, 86);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(536, 202);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile1.TabIndex = 7;
+            this.metroTile1.Text = "\r\n";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(90, 131);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(44, 19);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel2.TabIndex = 7;
+            this.metroLabel2.Text = "Hasło:";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(90, 84);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(44, 19);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel3.TabIndex = 8;
+            this.metroLabel3.Text = "Login:";
+            // 
             // LogowanieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 450);
+            this.ClientSize = new System.Drawing.Size(725, 450);
             this.Controls.Add(this.txtHaslo);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.btnLogowanie);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.metroTile1);
             this.Name = "LogowanieForm";
+            this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "NovaPrzychodnia";
+            this.metroTile1.ResumeLayout(false);
+            this.metroTile1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogowanie;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.TextBox txtHaslo;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
