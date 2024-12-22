@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace RejestracjaApp
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroFramework.Forms.MetroForm
     {
 
         private readonly BazaDanych bazaDanych;
@@ -100,6 +100,16 @@ namespace RejestracjaApp
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
         {
 
         }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace RejestracjaApp
 {
-    public partial class LogowanieForm : Form
+    public partial class LogowanieForm : MetroFramework.Forms.MetroForm
     {
 
         public LogowanieForm()

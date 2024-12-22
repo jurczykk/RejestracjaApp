@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace RejestracjaApp
 {
-    public partial class DodajPacjentaForm : Form
+    public partial class DodajPacjentaForm : MetroFramework.Forms.MetroForm
     {
         private readonly BazaDanych bazaDanych;
 
